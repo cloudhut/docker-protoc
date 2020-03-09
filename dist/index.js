@@ -979,7 +979,7 @@ function run() {
             const runLint = core.getInput('run-linter') == 'true' ? true : false;
             if (runLint) {
                 core.startGroup('run linter');
-                const code = yield exec.exec('/bin/buf', ['check', 'lint']);
+                const code = yield exec.exec('../bin/buf', ['check', 'lint']);
                 if (code !== 0) {
                     throw new Error(`linter exited with code ${code}`);
                 }
