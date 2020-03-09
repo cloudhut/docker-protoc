@@ -4,7 +4,7 @@ async function run(): Promise<void> {
   try {
     core.info('Starting buf action')
 
-    const runLint = core.getInput('runLint') == 'true' ? true : false
+    const runLint = core.getInput('run-linter') == 'true' ? true : false
     if (runLint) {
       core.info('Running linter')
     }
