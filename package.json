@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/cloudhut/docker-protoc#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3"
+    "@actions/core": "^1.2.3",
+    "@actions/exec": "^1.0.3"
   },
   "devDependencies": {
     "@types/node": "^13.9.0",
