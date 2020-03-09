@@ -1,0 +1,9 @@
+name: buf
+description: Lint your proto files and check them for breaking changes
+inputs:
+  lint: # id of input
+    description: Whether to run the lint command
+    required: true
+runs:
+  using: node12
+  main: dist/index.js

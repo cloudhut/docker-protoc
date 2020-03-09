@@ -1,0 +1,32 @@
+{
+  "name": "buf-action",
+  "version": "1.0.0",
+  "description": "Docker image which is used by GitHub actions to compile our protobufs into stubs",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "rimraf lib && tsc && ncc build",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudhut/docker-protoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudhut/docker-protoc/issues"
+  },
+  "homepage": "https://github.com/cloudhut/docker-protoc#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@zeit/ncc": "^0.21.1",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  }
+}
